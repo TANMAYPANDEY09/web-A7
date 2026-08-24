@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS- Font | Text | CSS Box Model(w|h|m|p|b)</title>
+    <style>
+     h1{
+        color: blue !important;
+        background-color:antiquewhite;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-size: 5em; */
+        font-weight: 100;
+        font-style:italic;
+     }
+     p{
+        text-align: center;
+        text-decoration:line-through;
+        text-transform:capitalize;
+        text-shadow: 0px 1px 2px #986a98;
+        text-indent: 90px;
+     }
+     #box{
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+        margin: 0px 10px 8px 5px;
+        padding: 20px 30px; 
+        box-sizing: content-box; 
+     }
+    </style>
+</head>
+<body>
+    <!-- css - inline / internal and external-->
+    <h1 style="font-size: 4em; color: rgb(15, 15, 15);">Hello World!</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nisi qui aliquid quos dolore hic aut voluptatibus nihil laborum corporis id doloribus consequuntur quisquam optio voluptates obcaecati quaerat, itaque dignissimos.
+    </p>
+
+    <!--box model-->
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet eum ex molestiae iste ea voluptates et mollitia modi esse sit. Voluptate vitae sunt commodi ad amet sequi quasi rerum molestias!</p>
+    </div>
+
+    
+</body>
+</html>
