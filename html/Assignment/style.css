@@ -1,0 +1,287 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf2f8;
+    color: #222;
+}
+.navbar {
+    
+    background-color: royalblue;
+    padding: 15px 30px;
+    display: flex;
+    border:2px solid black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: aqua;
+}
+
+section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    border-left: 6px solid royalblue;
+}
+
+.intro-card {
+    text-align: center;
+
+    background-color: royalblue;
+
+    color: white;
+
+    border-left: none;
+}
+
+.intro-card h1 {
+    background-color: aqua;
+    color: blueviolet;
+
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+.intro-card h2 {
+    font-size: 24px;
+}
+
+.card h2 {
+    color: blueviolet;
+
+    border-bottom: 2px solid aqua;
+
+    padding-bottom: 8px;
+}
+
+.card h3 {
+    color: royalblue;
+}
+
+figure {
+    text-align: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 10%;
+
+    border: 5px solid royalblue;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.skills-list {
+    list-style-type: square;
+
+    line-height: 2;
+
+    font-size: 18px;
+}
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 2px solid royalblue;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+th {
+    background-color: aqua;
+
+    color: blueviolet;
+}
+
+td {
+    background-color: #f8f9fa;
+}
+
+.project-card {
+    background-color: #f4f8ff;
+
+    padding: 20px;
+    width:300;
+
+    margin: 20px 0;
+
+    border-radius: 12px;
+
+    border: 2px solid #d6e4ff;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+
+    transition: 0.3s;
+}
+
+.project-image {
+    width: 200px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 2px solid royalblue;
+}
+.project-card a,
+.footer-card a {
+    display: inline-block;
+
+    background-color: royalblue;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    margin-top: 10px;
+}
+
+.project-card a:hover,
+.footer-card a:hover {
+    background-color: blueviolet;
+}
+
+ol {
+    line-height: 2;
+
+    font-size: 18px;
+}
+
+footer {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+}
+
+.footer-card {
+    text-align: center;
+
+    background-color: royalblue;
+
+    color: white;
+
+    border-left: none;
+}
+
+.footer-card h3 {
+    color: white;
+}
+
+.footer-card p {
+    background-color: rgb(207, 71, 71);
+
+    padding: 10px;
+
+    border-radius: 8px;
+}
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+}
+#project-container{
+    display:flex;
+    flex-direction: row;
+    border: 2px solid black;
+    width:900px;
+    padding:10px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
