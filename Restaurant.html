@@ -1,238 +1,262 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Tasty Bites Restaurant</title>
+<html lang="en">
 
-    <!-- External CSS -->
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>4BUCKS</title>
+
     <link rel="stylesheet" href="Resty.css">
+
 </head>
 
 <body>
 
-    <!-- Header -->
-    <div class="header">
+    <nav>
 
-        <h1>Tasty Bites Restaurant</h1>
+        <div class="logo">
+            4BUCKS
+        </div>
 
-        <p>Delicious Food | Great Taste | Best Service</p>
+        <ul>
 
-        <a href="#menu">View Our Menu</a>
+            <li><a href="#home">Home</a></li>
 
-    </div>
+            <li><a href="#menu">Menu</a></li>
 
+            <li><a href="#about">About</a></li>
 
-    <!-- About Us -->
-    <div class="about">
+            <li><a href="#contact">Contact</a></li>
 
-        <h2>About Us</h2>
+        </ul>
 
-        <p>
-            Welcome to Tasty Bites Restaurant!
-            We serve fresh and delicious food at affordable prices.
-            Visit us with your family and friends.
-        </p>
-
-    </div>
+    </nav>
 
 
-    <!-- Food Menu -->
-    <div class="menu" id="menu">
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <h1>Welcome to Food Corner</h1>
+
+            <p>
+                Delicious food made with fresh ingredients
+            </p>
+
+            <a href="#menu" class="button">
+                View Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+
+    <section class="menu" id="menu">
 
         <h2>Our Menu</h2>
 
-        <!-- Food 1 -->
-        <div class="food">
+        <p class="menu-intro">
+            Check out some of our most popular dishes
+        </p>
 
-            <img src="images/pizza.jpg" alt="Pizza">
 
-            <h3>Cheese Pizza</h3>
+        <div class="food-container">
 
-            <p>Delicious cheese pizza with fresh vegetables.</p>
 
-            <h3>₹250</h3>
+            <!-- Food 1 -->
 
-            <details>
-                <summary>More Details</summary>
+            <div class="food-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+                alt="Pizza">
+
+                <h3>Cheese Pizza</h3>
 
                 <p>
-                    Size: Medium<br>
-                    Ingredients: Cheese, Tomato, Onion, Capsicum
+                    Delicious pizza with cheese and fresh vegetables.
                 </p>
 
-            </details>
+                <h4>₹250</h4>
+
+                <details>
+
+                    <summary>More Details</summary>
+
+                    <p>
+                        Medium pizza with cheese, tomato,
+                        onion and capsicum.
+                    </p>
+
+                </details>
+
+            </div>
+
+
+            <!-- Food 2 -->
+
+            <div class="food-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                alt="Burger">
+
+                <h3>Veg Burger</h3>
+
+                <p>
+                    Crispy veg patty with cheese and fresh vegetables.
+                </p>
+
+                <h4>₹150</h4>
+
+                <details>
+
+                    <summary>More Details</summary>
+
+                    <p>
+                        Vegetable patty, cheese, tomato,
+                        lettuce and special sauce.
+                    </p>
+
+                </details>
+
+            </div>
+
+
+            <!-- Food 3 -->
+
+            <div class="food-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80"
+                alt="Biryani">
+
+                <h3>Veg Biryani</h3>
+
+                <p>
+                    Spicy and delicious biryani made with basmati rice.
+                </p>
+
+                <h4>₹200</h4>
+
+                <details>
+
+                    <summary>More Details</summary>
+
+                    <p>
+                        Basmati rice cooked with vegetables
+                        and Indian spices. Served with raita.
+                    </p>
+
+                </details>
+
+            </div>
+
+
+            <!-- Food 4 -->
+
+            <div class="food-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80"
+                alt="Pasta">
+
+                <h3>White Sauce Pasta</h3>
+
+                <p>
+                    Creamy pasta prepared with vegetables and cheese.
+                </p>
+
+                <h4>₹180</h4>
+
+                <details>
+
+                    <summary>More Details</summary>
+
+                    <p>
+                        Pasta with white sauce, cheese,
+                        mushroom and vegetables.
+                    </p>
+
+                </details>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+
+            <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80"
+            alt="Restaurant">
 
         </div>
 
 
-        <!-- Food 2 -->
-        <div class="food">
+        <div class="about-text">
 
-            <img src="images/burger.jpg" alt="Burger">
-
-            <h3>Veg Burger</h3>
-
-            <p>Crispy vegetable burger with cheese.</p>
-
-            <h3>₹120</h3>
-
-            <details>
-                <summary>More Details</summary>
-
-                <p>
-                    Ingredients: Potato Patty, Cheese, Tomato, Lettuce
-                </p>
-
-            </details>
-
-        </div>
-
-
-        <!-- Food 3 -->
-        <div class="food">
-
-            <img src="images/biryani.jpg" alt="Biryani">
-
-            <h3>Veg Biryani</h3>
-
-            <p>Fresh and spicy vegetable biryani.</p>
-
-            <h3>₹180</h3>
-
-            <details>
-                <summary>More Details</summary>
-
-                <p>
-                    Ingredients: Rice, Vegetables, Spices and Herbs
-                </p>
-
-            </details>
-
-        </div>
-
-
-        <!-- Food 4 -->
-        <div class="food">
-
-            <img src="images/pasta.jpg" alt="Pasta">
-
-            <h3>White Sauce Pasta</h3>
-
-            <p>Creamy pasta with vegetables and white sauce.</p>
-
-            <h3>₹160</h3>
-
-            <details>
-                <summary>More Details</summary>
-
-                <p>
-                    Ingredients: Pasta, White Sauce, Cheese, Vegetables
-                </p>
-
-            </details>
-
-        </div>
-
-    </div>
-
-
-    <!-- Special Offers -->
-    <div class="offers">
-
-        <h2>Special Offers</h2>
-
-        <details>
-
-            <summary>Today's Special Offer</summary>
+            <h2>About Our Restaurant</h2>
 
             <p>
-                Get 20% OFF on orders above ₹500!
+                Food Corner is a simple and friendly restaurant
+                where you can enjoy tasty food with your family
+                and friends.
             </p>
-
-        </details>
-
-        <br>
-
-        <details>
-
-            <summary>Family Combo</summary>
 
             <p>
-                2 Pizzas + 2 Burgers + 2 Cold Drinks = ₹599
+                We believe in serving fresh food at reasonable
+                prices and providing good service to our customers.
             </p>
 
-        </details>
+        </div>
 
-    </div>
-
-
-    <!-- Order Form -->
-    <div class="order">
-
-        <h2>Place Your Order</h2>
-
-        <form>
-
-            <label>Name:</label>
-            <br>
-
-            <input type="text" placeholder="Enter your name">
-
-            <br><br>
+    </section>
 
 
-            <label>Phone Number:</label>
-            <br>
+    <!-- Contact Section -->
 
-            <input type="text" placeholder="Enter phone number">
-
-            <br><br>
-
-
-            <label>Select Food:</label>
-            <br>
-
-            <select>
-
-                <option>Cheese Pizza</option>
-                <option>Veg Burger</option>
-                <option>Veg Biryani</option>
-                <option>White Sauce Pasta</option>
-
-            </select>
-
-            <br><br>
-
-
-            <label>Address:</label>
-            <br>
-
-            <textarea rows="4" placeholder="Enter your address"></textarea>
-
-            <br><br>
-
-
-            <button type="submit">Order Now</button>
-
-        </form>
-
-    </div>
-
-
-    <!-- Contact -->
-    <div class="contact">
+    <section class="contact" id="contact">
 
         <h2>Contact Us</h2>
 
-        <p>Phone: 9876543210</p>
+        <p>📍 Main Market, Ghaziabad</p>
 
-        <p>Email: tastybites@gmail.com</p>
+        <p>📞 98xxxxxxxx</p>
 
-        <p>Address: Main Market, Ghaziabad</p>
+        <p>📧 4BUCKS@gmail.com</p>
 
-        <p>© 2026 Tasty Bites Restaurant</p>
+        <p>⏰ Open: 11:00 AM - 10:00 PM</p>
 
-    </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Food Corner | All Rights Reserved
+        </p>
+
+    </footer>
+
 
 </body>
+
 </html>

@@ -1,112 +1,195 @@
+/* Basic Settings */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family: Arial;
-    margin: 0;
-    background-color: #fff2cc;
+    font-family: Arial, sans-serif;
+    background-color: #fff8ef;
+    color: #333;
 }
 
 
-/* Header with Background Image */
+/* ================= NAVBAR ================= */
 
-.header {
-    background-image: url("images/restaurant.jpg");
+nav {
+    background-color: #222;
+
+    height: 65px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+}
+
+.logo {
+    color: orange;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+
+    height: 500px;
+
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1400&q=80");
 
     background-size: cover;
 
     background-position: center;
 
-    text-align: center;
+    display: flex;
 
-    padding: 100px 20px;
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
 
     color: white;
 }
 
+.home-content h1 {
+    font-size: 48px;
 
-/* Header Heading */
-
-.header h1 {
-    font-size: 45px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    margin-bottom: 15px;
 }
 
-
-/* Header Paragraph */
-
-.header p {
+.home-content p {
     font-size: 20px;
+
+    margin-bottom: 25px;
 }
 
 
-/* Header Link */
+/* Button */
 
-.header a {
+.button {
     background-color: orange;
+
     color: black;
-    padding: 10px 20px;
+
     text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: darkorange;
 }
 
 
-/* About Section */
-
-.about {
-    background-color: white;
-
-    margin: 20px;
-
-    padding: 20px;
-
-    border: 2px solid brown;
-
-    text-align: center;
-}
-
-
-/* Menu */
+/* ================= MENU ================= */
 
 .menu {
-    background-color: #fff;
 
-    margin: 20px;
-
-    padding: 20px;
+    padding: 60px 7%;
 
     text-align: center;
 }
 
-
-/* Menu Heading */
-
 .menu h2 {
-    color: darkred;
+
+    font-size: 35px;
+
+    color: #b3541e;
+
+    margin-bottom: 10px;
+}
+
+.menu-intro {
+
+    color: #666;
+
+    margin-bottom: 30px;
 }
 
 
-/* Food Items */
+/* Food Container */
 
-.food {
-    background-color: #fff2cc;
+.food-container {
 
-    border: 2px solid brown;
+    display: grid;
 
-    width: 250px;
+    grid-template-columns:
+    repeat(4, 1fr);
 
-    display: inline-block;
-
-    vertical-align: top;
-
-    margin: 10px;
-
-    padding: 15px;
+    gap: 20px;
 }
 
 
-/* Food Images */
+/* Food Card */
 
-.food img {
+.food-card {
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    padding-bottom: 20px;
+
+    box-shadow:
+    0 3px 10px
+    rgba(0, 0, 0, 0.15);
+
+    overflow: hidden;
+}
+
+.food-card img {
+
     width: 100%;
 
     height: 180px;
@@ -114,114 +197,205 @@ body {
     object-fit: cover;
 }
 
+.food-card h3 {
 
-/* Food Name */
+    color: #b3541e;
 
-.food h3 {
-    color: darkred;
+    margin: 15px 5px 8px;
+}
+
+.food-card > p {
+
+    color: #666;
+
+    padding: 0 15px;
+
+    line-height: 1.5;
+}
+
+.food-card h4 {
+
+    color: #e67e22;
+
+    font-size: 20px;
+
+    margin: 12px;
 }
 
 
-/* Details */
+/* Details Tag */
 
 details {
-    background-color: white;
+
+    margin: 10px 15px;
+
+    text-align: left;
+
+    background-color: #fff3df;
 
     padding: 10px;
 
-    margin-top: 10px;
+    border-radius: 5px;
 }
-
-
-/* Details Summary */
 
 summary {
-    color: darkred;
 
-    cursor: pointer;
+    color: #b3541e;
 
     font-weight: bold;
-}
-
-
-/* Offers */
-
-.offers {
-    background-color: orange;
-
-    margin: 20px;
-
-    padding: 20px;
-
-    text-align: center;
-}
-
-
-/* Order Section */
-
-.order {
-    background-color: white;
-
-    margin: 20px;
-
-    padding: 20px;
-
-    text-align: center;
-
-    border: 2px solid brown;
-}
-
-
-/* Input */
-
-input {
-    width: 250px;
-
-    padding: 10px;
-}
-
-
-/* Select */
-
-select {
-    width: 270px;
-
-    padding: 10px;
-}
-
-
-/* Textarea */
-
-textarea {
-    width: 250px;
-
-    padding: 10px;
-}
-
-
-/* Button */
-
-button {
-    background-color: darkred;
-
-    color: white;
-
-    padding: 12px 25px;
-
-    border: none;
 
     cursor: pointer;
 }
 
+details p {
 
-/* Contact */
+    margin-top: 8px;
+
+    color: #555;
+
+    line-height: 1.5;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+
+    background-color: white;
+
+    padding: 60px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+.about-image {
+
+    width: 50%;
+}
+
+.about-image img {
+
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.about-text {
+
+    width: 50%;
+}
+
+.about-text h2 {
+
+    color: #b3541e;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+
+    color: #555;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= CONTACT ================= */
 
 .contact {
-    background-color: #333;
+
+    background-color: #fff0d5;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.contact h2 {
+
+    color: #b3541e;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.contact p {
+
+    margin: 10px;
+
+    color: #555;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background-color: #222;
 
     color: white;
 
     text-align: center;
 
-    padding: 25px;
+    padding: 20px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .food-container {
+
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+    .about {
+
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-text {
+
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav ul li {
+
+        margin-left: 10px;
+    }
+
+    nav ul li a {
+
+        font-size: 13px;
+    }
+
+    .home-content h1 {
+
+        font-size: 35px;
+    }
+
+    .food-container {
+
+        grid-template-columns: 1fr;
+    }
 }
