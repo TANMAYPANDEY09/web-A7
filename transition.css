@@ -344,7 +344,7 @@ section h2 {
 .ease-in {
 
     transition:
-        width 1s ease-in;
+        width 2s ease-in;
 }
 
 
@@ -405,7 +405,7 @@ section h2 {
     left: 0;
 
     animation:
-        move 5s linear infinite;
+        move 3s linear infinite;
 }
 
 

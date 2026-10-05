@@ -1,0 +1,227 @@
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #fff2cc;
+}
+
+
+/* Header with Background Image */
+
+.header {
+    background-image: url("images/restaurant.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    color: white;
+}
+
+
+/* Header Heading */
+
+.header h1 {
+    font-size: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+}
+
+
+/* Header Paragraph */
+
+.header p {
+    font-size: 20px;
+}
+
+
+/* Header Link */
+
+.header a {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+/* About Section */
+
+.about {
+    background-color: white;
+
+    margin: 20px;
+
+    padding: 20px;
+
+    border: 2px solid brown;
+
+    text-align: center;
+}
+
+
+/* Menu */
+
+.menu {
+    background-color: #fff;
+
+    margin: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+/* Menu Heading */
+
+.menu h2 {
+    color: darkred;
+}
+
+
+/* Food Items */
+
+.food {
+    background-color: #fff2cc;
+
+    border: 2px solid brown;
+
+    width: 250px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 10px;
+
+    padding: 15px;
+}
+
+
+/* Food Images */
+
+.food img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+}
+
+
+/* Food Name */
+
+.food h3 {
+    color: darkred;
+}
+
+
+/* Details */
+
+details {
+    background-color: white;
+
+    padding: 10px;
+
+    margin-top: 10px;
+}
+
+
+/* Details Summary */
+
+summary {
+    color: darkred;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* Offers */
+
+.offers {
+    background-color: orange;
+
+    margin: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+/* Order Section */
+
+.order {
+    background-color: white;
+
+    margin: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border: 2px solid brown;
+}
+
+
+/* Input */
+
+input {
+    width: 250px;
+
+    padding: 10px;
+}
+
+
+/* Select */
+
+select {
+    width: 270px;
+
+    padding: 10px;
+}
+
+
+/* Textarea */
+
+textarea {
+    width: 250px;
+
+    padding: 10px;
+}
+
+
+/* Button */
+
+button {
+    background-color: darkred;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* Contact */
+
+.contact {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
